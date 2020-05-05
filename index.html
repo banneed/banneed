@@ -7,12 +7,17 @@
 
 
 
+
+
+
+
 <form class="needs-validation" novalidate>
 <div class="row justify-content-center">
 <div class="col-8">
-    <h2>Форма с валидацией</h2>
+    <h2>Согласие на обработку ПД</h2>
   <div class="form-row">
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4">
+    <div class="form-row">
       <label for="validationCustom01">Фамилия</label>
       <input type="text" class="form-control" id="last_name" placeholder="Фамилия" required>
       <div class="valid-feedback">
@@ -21,6 +26,8 @@
         <div class="invalid-feedback">
           Заполни фамилию, пожалуйста.
         </div>
+    </div>
+     <div class="form-row">
       <label for="validationCustom02">Имя</label>
       <input type="text" class="form-control" id="first_name" placeholder="Имя"  required>
       <div class="valid-feedback">
@@ -29,54 +36,63 @@
         <div class="invalid-feedback">
           Заполни имя, пожалуйста.
         </div>
+    </div>
+     <div class="form-row">
       <label for="validationCustom02">Отчество</label>
       <input type="text" class="form-control" id="Patronymic" placeholder="Отчество" >
       <div class="valid-feedback">
         Looks good!
-      </div>      
+      </div> 
+      </div>     
     </div>
-    <div class="col-md-6 mb-3">
+    <div class="col-7 ml-auto">
         <div class="form-row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-3 mb-1">
           <label for="validationCustom03">Серия</label>
           <input type="text" class="form-control" id="Series" placeholder="Серия" required>
           <div class="invalid-feedback">
             Не заполнен номер паспорта
           </div>
         </div>
-        <div class="col-md-8 mb-3">
+        <div class="col-md-4 mb-3">
           <label for="validationCustom04">Номер</label>
           <input type="text" class="form-control" id="Number" placeholder="Номер" required>
           <div class="invalid-feedback">
-            Please provide a valid state.
+            Не заполнен номер паспорта
+          </div>
+        </div>
+        <div class="col-md-5 mb-3">
+          <label for="validationCustom04">Дата выдачи</label>
+          <input type="textarea" class="form-control" id="IssueDate" placeholder="Дата выдачи" required>
+          <div class="invalid-feedback">
+            Заполни дату выдачи
           </div>
         </div>
 
       </div>
-        <div class="form-row">
-          <label for="validationCustom04">Дата выдачи</label>
-          <input type="textarea" class="form-control" id="IssueDate" placeholder="Дата выдачи" required>
-          <div class="invalid-feedback">
-            Please provide a valid state.
-          </div>
-      </div>
-              <div class="form-row">
-          <label for="validationCustom04">Кем выдан</label>
-          <input type="textarea" class="form-control" id="IssuedBy" placeholder="Кем выдан" required>
-          <div class="invalid-feedback">
-            Please provide a valid state.
-          </div>
-      </div>
-              <div class="form-row">
-          <label for="validationCustom04">Адрес</label>
-          <input type="textarea" class="form-control" id="Address" placeholder="Адрес" required>
-          <div class="invalid-feedback">
-            Please provide a valid state.
-          </div>
-      </div>
-    </div>
 
-  </div>
+
+
+ <div class="form-group">
+          <label for="validationCustom04">Кем выдан</label>
+          <textarea  class="form-control" id="IssuedBy" placeholder="Кем выдан" required></textarea>
+          <div class="invalid-feedback">
+           Заполни кем выдан
+          </div>
+</div>
+
+
+        <div class="form-group">
+  <label for="comment">Адрес</label>
+  <textarea class="form-control" rows="1" id="Address" placeholder="Адрес" required></textarea>
+  <div class="invalid-feedback">
+           Заполни адрес
+          </div>
+</div>
+    </div>
+</div>
+
+
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">Телефон</label>
@@ -100,6 +116,7 @@
       </div>
     </div>
   </div>
+
  <!-- <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -111,11 +128,11 @@
       </div>
     </div>
   </div> -->
-  <button onclick="generate()" class="btn btn-primary" type="submit">Submit form</button>
+  <button onclick="generate()" class="btn btn-primary" type="submit">Скачать</button>
 </div>
 </div>
 </form>
-<button onclick="generate()" class="btn btn-primary" type="submit">Submit form</button>
+<!--<button onclick="generate()" class="btn btn-primary" type="submit">Submit form</button>-->
 
 
 
